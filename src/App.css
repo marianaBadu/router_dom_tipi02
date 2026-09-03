@@ -1,0 +1,41 @@
+.app__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 32px;
+  border-bottom: 1px solid var(--linha);
+  flex-wrap: wrap;
+}
+
+.app__marca {
+  font-family: "Lora", serif;
+  font-size: 1.1rem;
+  color: var(--pergaminho);
+}
+
+.app__botoes {
+  display: flex;
+  gap: 8px;
+}
+
+.app__botao {
+  background: none;
+  border: 1px solid var(--linha);
+  color: var(--pergaminho-suave);
+  border-radius: var(--raio);
+  padding: 8px 16px;
+  font-size: 0.85rem;
+}
+
+.app__botao:hover {
+  border-color: var(--dourado);
+  color: var(--dourado);
+}
+
+.app__botao--ativo {
+  background: var(--dourado);
+  border-color: var(--dourado);
+  color: var(--tinta);
+  font-weight: 600;
+}

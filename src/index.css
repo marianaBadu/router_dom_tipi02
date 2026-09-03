@@ -1,0 +1,100 @@
+/* =====================================================================
+   index.css
+   Reset básico + tokens visuais (cores, tipografia) usados por toda a
+   aplicação. Mantém a mesma identidade da demonstração anterior em
+   HTML/JS puro, para dar continuidade visual entre as etapas da aula.
+   ===================================================================== */
+
+:root {
+  --tinta: #1b2233;
+  --tinta-clara: #262f45;
+  --linha: #3c4763;
+  --pergaminho: #efe6d0;
+  --pergaminho-suave: #b9b6ab;
+  --dourado: #c9a24b;
+  --verde-selo: #6f9967;
+  --vinho: #b4593f;
+  --raio: 3px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--tinta);
+  color: var(--pergaminho);
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: "Lora", serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* ---------------------------------------------------------------------
+   Estilos de formulário reaproveitados pelas telas de Login e Cadastro
+--------------------------------------------------------------------- */
+.campo {
+  margin-bottom: 22px;
+}
+
+.campo label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--pergaminho-suave);
+  margin-bottom: 6px;
+}
+
+.campo input,
+.campo select {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--linha);
+  color: var(--pergaminho);
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 6px 2px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.campo select option {
+  background: var(--tinta-clara);
+}
+
+.campo input:focus,
+.campo select:focus {
+  border-bottom-color: var(--dourado);
+}
+
+.botao-primario {
+  width: 100%;
+  background: var(--dourado);
+  color: var(--tinta);
+  border: none;
+  border-radius: var(--raio);
+  padding: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.botao-primario:hover {
+  filter: brightness(1.08);
+}
